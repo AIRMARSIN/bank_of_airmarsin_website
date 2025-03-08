@@ -1,29 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>BANK OF AIRMARSIN</title>
-</head>
-<body>
-  <div class="container">
-    <div class="form-box login">
-      <form action="">
-        <h1>Login</h1>
-        <div class="input-box">
-          <input type="text" placeholder="username" required>
-          <i class='bx bxs-user-circle'></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>BANK OF AIRMARSIN</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box login">
+        <form action="">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="username" required />
+            <i class="bx bxs-user-circle"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
+      <div class="form-box signup">
+        <form action="">
+          <h1>Signup</h1>
+          <div class="input-box">
+            <input type="text" placeholder="first name" required />
+            <i class="bx bxs-user-circle"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="last name" required />
+            <i class="bx bxs-user-circle"></i>
+          </div>
+          <div class="input-box">
+            <input type="tel" placeholder="phone number" required />
+            <i class='bx bxs-phone'></i>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="email" required />
+            <i class='bx bxs-envelope' ></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="input-box radio-box">
+            <p>please choose an account type</p>
+            <div class="account_type">
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="savings"
+                  name="account_type"
+                  value="savings"
+                />
+                <label for="savings">savings</label>
+              </div>
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="current"
+                  name="account_type"
+                  value="current"
+                />
+                <label for="current">current</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
+      <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+          <h1>Hello welcome</h1>
+          <p>Don't have an account?</p>
+          <button class="btn signup-btn">signup</button>
+  
         </div>
-        <div class="input-box">
-          <input type="password" placeholder="password" required>
-          <i class='bx bxs-lock-alt' ></i>
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome back</h1>
+          <p>already have an account?</p>
+          <button class="btn login-btn">login</button>
+  
         </div>
-        <button type="submit" class="btn">Login</button>
-      </form>
+      </div>
+
     </div>
-    
-  </div>
-</body>
+    <script src="./script.js"></script>
+
+  </body>
 </html>
