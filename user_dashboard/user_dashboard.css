@@ -213,7 +213,6 @@ aside {
 }
 .dashboard-header {
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--spacing-xxl);
@@ -260,22 +259,34 @@ aside {
   gap: var(--spacing-xl);
 }
 .accounts {
-  background: var(--bg-primary);
-  display: flex;
+  /* position: absolute; */
   justify-content: space-between;
   gap: 20px;
   padding: 20px;
   width: 120%;
+  height: 300px;
   background: var(--bg-secondary);
-  border-radius: var(--btn-radius);
+  /* border-radius: var(--btn-radius); */
+  border-radius: var(--card-radius);
+
   /* width: 40%; */
 }
+.account-card-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  /* width: 200%; */
+
+
+}
 .account-card {
-  padding: 20px;
+  padding: 15px;
   box-shadow: var(--shadow-xl);
+  width: 100%;
 
   background: var(--bg-card);
-  width: 50%;
+  /* width: 45%; */
   border-radius: var(--btn-radius);
 }
 .account-name {
@@ -338,4 +349,172 @@ aside {
 }
 .expense-digit{
   color: var(--danger-color);
+}
+.debit-cards{
+  margin-left: 110px;
+  background: var(--bg-secondary);
+  padding: 25px;
+  border-radius: var(--card-radius);
+
+  /* height: 100vh;  */
+ 
+}
+.debit-card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.debit-card-header-text{
+  font-weight: var(--font-weight-semibold);
+ 
+}
+.circle{
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+  padding: 5px;
+}
+.debit-card-header-btn{
+  display: flex;
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  gap: 10px;
+}
+.debit-card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+.debit-card {
+  background: var(--primary-gradient);
+  width: 100%;
+  height: 240px;
+  border-radius: var(--btn-radius);
+  padding: var(--spacing-lg);
+  color: white;
+  position: relative;
+  box-shadow: var(--spacing-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--card-radius);
+}
+.debit-card::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.debit-card::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 40px;
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.card-chip {
+  width: 70px;
+  height: 50px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.card-chip::before,
+.card-chip::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+}
+.card-chip::before {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  height: 10px;
+}
+.card-chip::after {
+  bottom: 5px;
+  left: 5px;
+  width: 60px;
+  height: 5px;
+}
+.card-contactless {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.card-contactless span {
+  display: block;
+  width: 100%;
+  height: 6px;
+  border: 1.5px solid rgba(225, 225, 225, 0.8);
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+.card-number {
+  font-size: var(--font-size-xl);
+  letter-spacing: 2px;
+  margin: var(--spacing-md) 0;
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between; */
+  position: relative;
+  z-index: 2;
+  font-weight: var(--font-weight-medium);
+}
+.card-number span {
+  opacity: 0.5;
+}
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-md);
+  color: rgba(225, 225, 225, 0.8);
+  position: relative;
+  z-index: 2;
+}
+.card-valid {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.card-valid span {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: white;
+  font-weight: var(--font-weight-medium);
+}
+.card-holder {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 20px;
+}
+.card-type {
+  position: absolute;
+  /* margin-top: 30px; */
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  opacity: 0.9;
+  z-index: 2;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  letter-spacing: 1px;
 }
