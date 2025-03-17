@@ -215,7 +215,7 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: 22px;
   position: relative;
 }
 
@@ -271,14 +271,12 @@ aside {
 
   /* width: 40%; */
 }
-.account-card-container{
+.account-card-container {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 
   /* width: 200%; */
-
-
 }
 .account-card {
   padding: 15px;
@@ -298,8 +296,6 @@ aside {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-
-
 }
 .account-info {
   display: flex;
@@ -325,56 +321,55 @@ aside {
 .account-currency {
   font-weight: var(--font-weight-bold);
 }
-.account-amount{
+.account-amount {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
   margin-bottom: 20px;
   /* margin-top: 20px; */
   /* padding: px; */
 }
-.account-transactions{
+.account-transactions {
   display: flex;
   justify-content: space-between;
 }
-.income-text{
+.income-text {
   font-weight: var(--font-weight-semibold);
   /* color: var(--text-tertiary); */
 }
-.expense-text{
+.expense-text {
   font-weight: var(--font-weight-semibold);
   /* color: var(--text-tertiary); */
 }
-.income-digit{
+.income-digit {
   color: var(--success-color);
 }
-.expense-digit{
+.expense-digit {
   color: var(--danger-color);
 }
-.debit-cards{
+.debit-cards {
   margin-left: 110px;
   background: var(--bg-secondary);
   padding: 25px;
   border-radius: var(--card-radius);
+  /* margin-bottom: 200px; */
 
   /* height: 100vh;  */
- 
 }
-.debit-card-header{
+.debit-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.debit-card-header-text{
+.debit-card-header-text {
   font-weight: var(--font-weight-semibold);
- 
 }
-.circle{
+.circle {
   border: 1px solid var(--text-primary);
   border-radius: 50%;
   padding: 5px;
 }
-.debit-card-header-btn{
+.debit-card-header-btn {
   display: flex;
   align-items: center;
   font-weight: var(--font-weight-medium);
@@ -384,12 +379,13 @@ aside {
   display: flex;
   justify-content: space-between;
   gap: var(--spacing-lg);
+  margin-bottom: 35px;
 }
 .debit-card {
   background: var(--primary-gradient);
   width: 100%;
   height: 240px;
-  border-radius: var(--btn-radius);
+  border-radius: var(--card-radius);
   padding: var(--spacing-lg);
   color: white;
   position: relative;
@@ -517,4 +513,94 @@ aside {
   font-size: var(--font-size-lg);
   font-style: italic;
   letter-spacing: 1px;
+}
+.total-balance {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: var(--card-radius);
+}
+.total-balance-header {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+.balance {
+  text-align: center;
+  margin: 10px;
+}
+.balance-text {
+  font-size: 42px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: var(--spacing-lg) 0 var(--spacing-xs);
+  background: linear-gradient(
+    135deg,
+    var(--text-primary),
+    var(--primary-color)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.txn-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.txn-btn {
+  justify-content: center;
+  text-align: center;
+  background: var(--bg-secondary);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+}
+.txn-btn i {
+  padding: 10px;
+  background: var(--bg-primary);
+  border-radius: 50px;
+}
+.txn-btn:hover {
+  background: white;
+  border: 1px solid var(--border-light);
+}
+.transaction-container {
+  margin-top: -350px;
+  background: var(--bg-secondary);
+  width: 120%;
+  padding: 20px;
+  border-radius: var(--card-radius);
+}
+.transactions-header {
+  padding: 10px;
+}
+.transactions-header p {
+  font-weight: var(--font-weight-bold);
+}
+.transcations {
+  margin-top: 30px;
+}
+.txn-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.txn-des {
+  display: flex;
+  gap: 20px;
+}
+.txn-details div {
+  font-weight: var(--font-weight-bold);
+}
+.txn-amount {
+  
+font-weight: var(--font-weight-bold);
+font-size: var(--font-size-md);
+padding:  var(--spacing-sm);
+border-radius: 30px;
+color: var(--danger-color);
+background-color: rgba(225, 113, 113, 0.1);
 }
